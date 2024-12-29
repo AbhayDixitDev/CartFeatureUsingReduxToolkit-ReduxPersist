@@ -1,0 +1,14 @@
+/* Footer.css */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10vh;
+    background-color: #f8f9fa; /* Light background color */
+    border-top: 1px solid #dee2e6; /* Optional: border for separation */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    z-index: 1000; /* Ensure it stays above other content */
+  }
