@@ -23,12 +23,14 @@ const Home = () => {
         <Card style={{ width: '18rem',margin:"10px" }}>
         <Card.Img variant="top" src={item.image} style={{height:"300px"}}/>
         <Card.Body>
-          <Card.Title>{item.name}</Card.Title>
+          <Card.Title>{item.name} <br /> Price {item.price}</Card.Title>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            Description: {item.description} <br />
+            Category: {item.category} <br />
+            SubCategory : {item.subcategory}
           </Card.Text>
-          <Button variant="primary" onClick={()=>{dispatch(addToCart(item))}}>Add to cart</Button>
+         
+          <Button variant="primary" onClick={()=>{dispatch(addToCart({...item,quantity:1}))}}>Add to cart</Button>
         </Card.Body>
       </Card>
     ))
